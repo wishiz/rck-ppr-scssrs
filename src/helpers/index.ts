@@ -1,6 +1,6 @@
 import { Match, Choice } from '../types'
 
-const getWinnerFigure = (choice1: Choice, choice2: Choice) => {
+export const getWinnerFigure = (choice1: Choice, choice2: Choice) => {
     if (choice1 === choice2) return null;
     if (choice1 === 'rock') {
         if (choice2 === 'scissor') {
@@ -41,7 +41,7 @@ export const getMatchesWinners = (matches: Array<Match>) => {
     return winnerFigureMap;
 }
 
-const calcPercentage = (value: number, total: number) => {
+export const calcPercentage = (value: number, total: number) => {
     return (100 * value) / total;
 }
 
@@ -56,13 +56,13 @@ export const getWinnersPercentages = (matches: Array<Match>) => {
     }
 }
 
-export const getLargestStreak = (s: Array<Match>) => {
+export const getLargestStreak = (matches: Array<Match>) => {
     let prevWinner = "";
     let count = 0;
     let result = { winners: [''], count: 0 };
 
-    for (let i = 0; i < s.length; i++) {
-        const { choice1, choice2 } = s[i]
+    for (let i = 0; i < matches.length; i++) {
+        const { choice1, choice2 } = matches[i]
         const winner = getWinnerFigure(choice1, choice2)
 
         if (!winner) {
