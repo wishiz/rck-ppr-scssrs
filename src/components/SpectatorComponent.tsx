@@ -14,8 +14,9 @@ const SpectatorComponent = ({ matches }: Props) => {
     <div>
       {winsPercentagesArr.map(([winner, winsPerc]) => {
         const capitalizedWinner = capitalizeWord(winner);
+
         return (
-          <Typography>
+          <Typography sx={{ fontSize: 20 }}>
             {capitalizedWinner} won {winsPerc}% of matches.
           </Typography>
         );

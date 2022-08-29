@@ -14,8 +14,9 @@ const JudgeComponent = ({ matches }: Props) => {
     <div>
       {winnersArr.map(([winner, wins]) => {
         const capitalizedWinner = capitalizeWord(winner);
+
         return (
-          <Typography>
+          <Typography sx={{ fontSize: 20 }}>
             {capitalizedWinner} won {wins} times.
           </Typography>
         );

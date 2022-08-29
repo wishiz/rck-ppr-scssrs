@@ -5,12 +5,10 @@ type Props = {
   matches: Array<Match>;
 };
 
-const OrganizerComponent = ({ matches }: Props) => {
-  return (
-    <Typography sx={{ fontSize: 20 }} color="text.secondary" gutterBottom>
-      The number of matches played: {matches.length}
-    </Typography>
-  );
-};
+const OrganizerComponent = ({ matches }: Props) => (
+  <Typography sx={{ fontSize: 20 }}>
+    The number of matches played: {matches.length}
+  </Typography>
+);
 
 export default OrganizerComponent;

@@ -11,11 +11,15 @@ const PlayerComponent = ({ matches }: Props) => {
 
   return (
     <div>
-      {winners.map((winner) => (
-        <Typography sx={{ fontSize: 20 }} color="text.secondary" gutterBottom>
-          Largest streak: {count} wins by {winner}
-        </Typography>
-      ))}
+      {count ? (
+        winners.map((winner) => (
+          <Typography sx={{ fontSize: 20 }}>
+            Largest streak: {count} wins by {winner}
+          </Typography>
+        ))
+      ) : (
+        <Typography sx={{ fontSize: 20 }}>No winners found</Typography>
+      )}
     </div>
   );
 };
