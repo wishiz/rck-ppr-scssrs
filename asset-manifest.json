@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/rck-ppr-scssrs/static/css/main.abd64e84.css",
+    "main.js": "/rck-ppr-scssrs/static/js/main.bd9b0d73.js",
+    "index.html": "/rck-ppr-scssrs/index.html",
+    "main.abd64e84.css.map": "/rck-ppr-scssrs/static/css/main.abd64e84.css.map",
+    "main.bd9b0d73.js.map": "/rck-ppr-scssrs/static/js/main.bd9b0d73.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.abd64e84.css",
+    "static/js/main.bd9b0d73.js"
+  ]
+}
