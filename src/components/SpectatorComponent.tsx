@@ -1,3 +1,4 @@
+import { nanoid } from "nanoid";
 import Typography from "@mui/material/Typography";
 import { Match } from "../types";
 import { getWinnersPercentages, capitalizeWord } from "../helpers";
@@ -16,7 +17,7 @@ const SpectatorComponent = ({ matches }: Props) => {
         const capitalizedWinner = capitalizeWord(winner);
 
         return (
-          <Typography sx={{ fontSize: 20 }}>
+          <Typography sx={{ fontSize: 20 }} key={nanoid()}>
             {capitalizedWinner} won {winsPerc}% of matches.
           </Typography>
         );

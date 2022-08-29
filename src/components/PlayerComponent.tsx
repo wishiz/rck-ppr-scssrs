@@ -1,3 +1,4 @@
+import { nanoid } from "nanoid";
 import Typography from "@mui/material/Typography";
 import { Match } from "../types";
 import { getLargestStreak } from "../helpers";
@@ -13,7 +14,7 @@ const PlayerComponent = ({ matches }: Props) => {
     <div>
       {count ? (
         winners.map((winner) => (
-          <Typography sx={{ fontSize: 20 }}>
+          <Typography sx={{ fontSize: 20 }} key={nanoid()}>
             Largest streak: {count} wins by {winner}
           </Typography>
         ))

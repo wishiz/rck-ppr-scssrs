@@ -1,3 +1,4 @@
+import { nanoid } from "nanoid";
 import { Match } from "../types";
 import { getMatchesWinners, capitalizeWord } from "../helpers";
 import { Typography } from "@mui/material";
@@ -16,7 +17,7 @@ const JudgeComponent = ({ matches }: Props) => {
         const capitalizedWinner = capitalizeWord(winner);
 
         return (
-          <Typography sx={{ fontSize: 20 }}>
+          <Typography sx={{ fontSize: 20 }} key={nanoid()}>
             {capitalizedWinner} won {wins} times.
           </Typography>
         );
