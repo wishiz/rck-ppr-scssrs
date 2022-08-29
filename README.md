@@ -21,4 +21,4 @@ local state seemed like a reasonable option. I though of implementing state thro
 
 For coping with React keys I picked `nanoid` library - it's very lightweight (has no dependencies) and easily utilized.
 
-For styling I chose MaterialUI - it's well-optimized and provides nice-looking, accessible CSS components out of the box. It allowed me to spend less time on styling in favor of a logic layer.
+For styling I chose `MaterialUI` - it's well-optimized and provides nice-looking, accessible CSS components out of the box. It allowed me to spend less time on styling in favor of a logic layer.
